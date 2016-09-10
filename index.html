@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet"  href="styles/style.css"/>
+		
+		<link rel="stylesheet"  href="scripts/jquery/jquery-ui.min.css"/>
+		<script src="scripts/jquery/external/jquery/jquery.js"></script>
+		<script src="scripts/jquery/jquery-ui.min.js"></script>
+		 
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<img src="images/logo.png" alt="BlueN logo"  draggable="false" onclick="myaudio()"/>	
+				<form action="" method="post" class="login" >
+			        <input type="email" placeholder="Email-address">
+			        <input type="password" placeholder="Password">
+			        <input type="submit" value="Login" id="sbtn" onmousedown="document.getElementById('beffect').play();"/><br>
+			        <a href="" >Forget your password?</a>
+				</form><!-- End of form  -->
+			</div>	<!-- End of header -->
+			<div class="center">
+				<p class="welcome">We promise to bring the whole world in one place, give it a chance, you won't regret it,start creating an account now
+					<br><span id="pfree"> it's for free.</span>
+				</p><!-- End of paragraph -->
+				<form action="" method="post">
+					<input type="text"  placeholder="First name">
+					<input type="text" placeholder="Last name">
+					<input type="email" placeholder="Email-address"><br>
+					<input id="regpass" type="password" placeholder="password">
+					<input id="regpassre" type="password" placeholder="re-enter password">
+					<input type="date" id="date" placeholder="Age"><br>
+					<input type="radio" name="gender" id="ma">
+					<label id="malab">Male</label>
+					<input type="radio" name="gender" id="fem">
+					<label id="femlab">Female</label><br>
+					<input type="submit" value="Create account" id="cbtn" onmousedown="document.getElementById('beffect').play();"/>
+				</form><!-- End of form -->
+			</div>	<!-- End of center -->
+			<div class="footer">
+				<p>Follow the subs to reach the horizon.<span id="copy">&copy;2016 BlueN</span></p>
+			</div>	<!-- End of footer -->
+		</div>	<!-- End of wrapper -->
+		<audio id="laudio" src="sounds/Level_Plane.mp3"></audio>
+		<audio id="beffect" src="sounds/bsound.mp3"></audio>
+		<script src="scripts/javascript.js"></script>
+	</body>
+</html>
