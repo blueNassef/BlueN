@@ -111,10 +111,11 @@ a:ACTIVE{
 	top:1px;
 }
 .footer{
-	text-align: right;
+	text-align: center;
 	position: absolute;
 	bottom: 0;
-	right: 0;
+	left: 0;
+	width: 100%;
 }
 .footer p #copy{
 	color: #db0202;
@@ -133,7 +134,7 @@ a:ACTIVE{
 }
 
 @media only screen  and (min-width: 160px) and (max-width: 800px){
-	.welcome{display: inline-block; position: relative; color: aqua;}
+	.welcome{display: inline-block; position: relative;}
 }
 
 
